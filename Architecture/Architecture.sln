@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0. 经典三层架构", "0. 经典三层架构", "{C32B3B6F-F18C-495B-9555-3242542EE35A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassicThreeLayer.UI", "ClassicThreeLayer.UI\ClassicThreeLayer.UI.csproj", "{FF45B848-D8C6-4E98-9410-F28CEFC4F0BB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BLL", "BLL", "{D569EB78-8E50-4C42-B9C8-158E20AABB23}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{8CD90A17-62D9-4660-BE02-5DD0D8FD8E11}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DAL", "DAL", "{44F2F64E-31B1-4F2D-8C78-81285F2C6AF5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassicThreeLayer.Entities", "Entities\ClassicThreeLayer.Entities.csproj", "{88BE83AD-E438-4454-9F09-AA1DD18BF79D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassicThreeLayer.DAL.Interface", "ClassicThreeLayer.DAL.Interface\ClassicThreeLayer.DAL.Interface.csproj", "{33849494-DFD9-4211-AA72-368A9EC9CAF9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassicThreeLayer.DAL.Implement", "ClassicThreeLayer.DAL.Implement\ClassicThreeLayer.DAL.Implement.csproj", "{78136751-017B-419D-B4D7-C568B1A15FE9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FF45B848-D8C6-4E98-9410-F28CEFC4F0BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF45B848-D8C6-4E98-9410-F28CEFC4F0BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF45B848-D8C6-4E98-9410-F28CEFC4F0BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF45B848-D8C6-4E98-9410-F28CEFC4F0BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88BE83AD-E438-4454-9F09-AA1DD18BF79D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88BE83AD-E438-4454-9F09-AA1DD18BF79D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88BE83AD-E438-4454-9F09-AA1DD18BF79D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88BE83AD-E438-4454-9F09-AA1DD18BF79D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33849494-DFD9-4211-AA72-368A9EC9CAF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33849494-DFD9-4211-AA72-368A9EC9CAF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33849494-DFD9-4211-AA72-368A9EC9CAF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33849494-DFD9-4211-AA72-368A9EC9CAF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78136751-017B-419D-B4D7-C568B1A15FE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78136751-017B-419D-B4D7-C568B1A15FE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78136751-017B-419D-B4D7-C568B1A15FE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78136751-017B-419D-B4D7-C568B1A15FE9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FF45B848-D8C6-4E98-9410-F28CEFC4F0BB} = {8CD90A17-62D9-4660-BE02-5DD0D8FD8E11}
+		{D569EB78-8E50-4C42-B9C8-158E20AABB23} = {C32B3B6F-F18C-495B-9555-3242542EE35A}
+		{8CD90A17-62D9-4660-BE02-5DD0D8FD8E11} = {C32B3B6F-F18C-495B-9555-3242542EE35A}
+		{44F2F64E-31B1-4F2D-8C78-81285F2C6AF5} = {C32B3B6F-F18C-495B-9555-3242542EE35A}
+		{88BE83AD-E438-4454-9F09-AA1DD18BF79D} = {44F2F64E-31B1-4F2D-8C78-81285F2C6AF5}
+		{33849494-DFD9-4211-AA72-368A9EC9CAF9} = {44F2F64E-31B1-4F2D-8C78-81285F2C6AF5}
+		{78136751-017B-419D-B4D7-C568B1A15FE9} = {44F2F64E-31B1-4F2D-8C78-81285F2C6AF5}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B9A3BB09-709D-4B21-A3B7-DBA195481316}
+	EndGlobalSection
+EndGlobal
