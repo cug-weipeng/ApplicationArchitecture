@@ -13,7 +13,5 @@ namespace ClassicThreeLayer.Entities
         public int ProductId { get; set; }
 
         public decimal Quantity { get; set; }
-        
-        public decimal Discount { get; set; }
     }
 }

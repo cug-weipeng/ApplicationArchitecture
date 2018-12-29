@@ -2,7 +2,7 @@
 
 namespace ClassicThreeLayer.DAL.Interface
 {
-    public interface IOrderItemtDao
+    public interface IOrderItemDao
     {
         OrderItem GetOrderItemsByOrderID(long orderId);
 

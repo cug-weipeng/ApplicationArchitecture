@@ -9,7 +9,7 @@
         /// <summary>
         /// 成本
         /// </summary>
-        public string Cost { get; set; }
+        public decimal Cost { get; set; }
 
         /// <summary>
         /// 售价

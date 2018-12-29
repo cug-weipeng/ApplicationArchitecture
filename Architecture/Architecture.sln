@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.27703.2026
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0. 经典三层架构", "0. 经典三层架构", "{C32B3B6F-F18C-495B-9555-3242542EE35A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassicThreeLayer.UI", "ClassicThreeLayer.UI\ClassicThreeLayer.UI.csproj", "{FF45B848-D8C6-4E98-9410-F28CEFC4F0BB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassicThreeLayer.UI", "ClassicThreeLayer.UI\ClassicThreeLayer.UI.csproj", "{FF45B848-D8C6-4E98-9410-F28CEFC4F0BB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BLL", "BLL", "{D569EB78-8E50-4C42-B9C8-158E20AABB23}"
 EndProject
@@ -13,11 +13,23 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{8CD90A17-62D9-
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DAL", "DAL", "{44F2F64E-31B1-4F2D-8C78-81285F2C6AF5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassicThreeLayer.Entities", "Entities\ClassicThreeLayer.Entities.csproj", "{88BE83AD-E438-4454-9F09-AA1DD18BF79D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassicThreeLayer.Entities", "Entities\ClassicThreeLayer.Entities.csproj", "{88BE83AD-E438-4454-9F09-AA1DD18BF79D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassicThreeLayer.DAL.Interface", "ClassicThreeLayer.DAL.Interface\ClassicThreeLayer.DAL.Interface.csproj", "{33849494-DFD9-4211-AA72-368A9EC9CAF9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassicThreeLayer.DAL.Interface", "ClassicThreeLayer.DAL.Interface\ClassicThreeLayer.DAL.Interface.csproj", "{33849494-DFD9-4211-AA72-368A9EC9CAF9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassicThreeLayer.DAL.Implement", "ClassicThreeLayer.DAL.Implement\ClassicThreeLayer.DAL.Implement.csproj", "{78136751-017B-419D-B4D7-C568B1A15FE9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassicThreeLayer.DAL.Implement", "ClassicThreeLayer.DAL.Implement\ClassicThreeLayer.DAL.Implement.csproj", "{78136751-017B-419D-B4D7-C568B1A15FE9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassicThreeLayer.Database.Interface", "ClassicThreeLayer.Database\ClassicThreeLayer.Database.Interface.csproj", "{E4008A40-A796-4863-9DC9-CF53AE7132DF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataBase", "DataBase", "{D9463C17-B986-495E-9B70-824FFC91BA1C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassicThreeLayer.BLL.Interfaces", "ClassicThreeLayer.CommandDispatcher.Interface\ClassicThreeLayer.BLL.Interfaces.csproj", "{C561C9C6-B0A7-4EAC-958E-4257F3CB4AA3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassicThreeLayer.BLL.ServiceHandlers", "ClasscicThreeLayer.BLL.Implement\ClassicThreeLayer.BLL.ServiceHandlers.csproj", "{49978801-4945-4195-B85C-83EB127A464C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassicThreeLayer.DAL.Factory", "ClassicThreeLayer.DaoFactory\ClassicThreeLayer.DAL.Factory.csproj", "{9ED0043C-7B56-40C0-8180-1236F0DFC4DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassicThreeLayer.BLL.Services", "ClassicThreeLayer.BLL.Services\ClassicThreeLayer.BLL.Services.csproj", "{64F48B46-0CDE-4698-ABC5-11345A72DB5A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +53,26 @@ Global
 		{78136751-017B-419D-B4D7-C568B1A15FE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{78136751-017B-419D-B4D7-C568B1A15FE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{78136751-017B-419D-B4D7-C568B1A15FE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4008A40-A796-4863-9DC9-CF53AE7132DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4008A40-A796-4863-9DC9-CF53AE7132DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4008A40-A796-4863-9DC9-CF53AE7132DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4008A40-A796-4863-9DC9-CF53AE7132DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C561C9C6-B0A7-4EAC-958E-4257F3CB4AA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C561C9C6-B0A7-4EAC-958E-4257F3CB4AA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C561C9C6-B0A7-4EAC-958E-4257F3CB4AA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C561C9C6-B0A7-4EAC-958E-4257F3CB4AA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49978801-4945-4195-B85C-83EB127A464C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49978801-4945-4195-B85C-83EB127A464C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49978801-4945-4195-B85C-83EB127A464C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49978801-4945-4195-B85C-83EB127A464C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9ED0043C-7B56-40C0-8180-1236F0DFC4DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9ED0043C-7B56-40C0-8180-1236F0DFC4DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9ED0043C-7B56-40C0-8180-1236F0DFC4DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9ED0043C-7B56-40C0-8180-1236F0DFC4DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64F48B46-0CDE-4698-ABC5-11345A72DB5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64F48B46-0CDE-4698-ABC5-11345A72DB5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64F48B46-0CDE-4698-ABC5-11345A72DB5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64F48B46-0CDE-4698-ABC5-11345A72DB5A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -53,6 +85,12 @@ Global
 		{88BE83AD-E438-4454-9F09-AA1DD18BF79D} = {44F2F64E-31B1-4F2D-8C78-81285F2C6AF5}
 		{33849494-DFD9-4211-AA72-368A9EC9CAF9} = {44F2F64E-31B1-4F2D-8C78-81285F2C6AF5}
 		{78136751-017B-419D-B4D7-C568B1A15FE9} = {44F2F64E-31B1-4F2D-8C78-81285F2C6AF5}
+		{E4008A40-A796-4863-9DC9-CF53AE7132DF} = {D9463C17-B986-495E-9B70-824FFC91BA1C}
+		{D9463C17-B986-495E-9B70-824FFC91BA1C} = {44F2F64E-31B1-4F2D-8C78-81285F2C6AF5}
+		{C561C9C6-B0A7-4EAC-958E-4257F3CB4AA3} = {D569EB78-8E50-4C42-B9C8-158E20AABB23}
+		{49978801-4945-4195-B85C-83EB127A464C} = {D569EB78-8E50-4C42-B9C8-158E20AABB23}
+		{9ED0043C-7B56-40C0-8180-1236F0DFC4DF} = {44F2F64E-31B1-4F2D-8C78-81285F2C6AF5}
+		{64F48B46-0CDE-4698-ABC5-11345A72DB5A} = {D569EB78-8E50-4C42-B9C8-158E20AABB23}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B9A3BB09-709D-4B21-A3B7-DBA195481316}

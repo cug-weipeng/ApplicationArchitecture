@@ -6,27 +6,32 @@ using System.Text;
 
 namespace ClassicThreeLayer.DAL.Implement
 {
-    public class OrderDao : DaoBase<Order>, IOrderDao
+    public class OrderItemDao : DaoBase<OrderItem>, IOrderItemDao
     {
-        private readonly static string _connectStringWrite = "Read from configFile";
-        private readonly static string _connectStringReadOnly = "Read from configFile2";
-
-        public OrderDao() : base(_connectStringReadOnly)
-        { }
-
-        public OrderDao(bool writeable)
-            : base(writeable ? _connectStringWrite : _connectStringReadOnly)
-        { }
-
-        public long CreateOrder(Order order)
+        public OrderItemDao(string connection):base(connection)
         {
-            // _connection.Open();
+
+        }
+
+        public long CreateOrderItem(OrderItem orderItem)
+        {
             //*******************************************************
             ///访问数据库，写sql 或者使用orm框架获取Product表中的数据
             /// id = DbHelper.Insert("Insert Order Set ...")
             //*******************************************************
 
             return DateTime.Now.Ticks;
+        }
+
+        public OrderItem GetOrderItemsByOrderID(long orderId)
+        {
+            return new OrderItem()
+            {
+                OrderId = orderId,
+                ProductId = 1,
+                Quantity = 2,
+                OrderItemId = DateTime.Now.Ticks
+            };
         }
     }
 }
